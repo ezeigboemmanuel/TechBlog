@@ -9,13 +9,13 @@ export async function generateMetadata({ params }: { params: { blogId: Id<"blogs
   });
 
   return {
-    metadataBase: new URL("https://your-deployed-url.com"),
+    metadataBase: new URL("https://tech-blog-sand-five.vercel.app"),
     title: blog.title,
     description: blog.article.slice(0, 200),
     openGraph: {
       title: blog.title,
       description: blog.article.slice(0, 200),
-      url: `https://your-deployed-url/blog/${blog._id}`,
+      url: `https://tech-blog-sand-five.vercel.app/blog/${blog._id}`,
       siteName: "TechBlog",
       images: [
         {
